@@ -48,10 +48,6 @@ func permissionsFromStatements(statements dbplugin.Statements) ([]Permission, er
 			return nil, err
 		}
 
-		if permission.Database == "" {
-			return nil, fmt.Errorf("database field in permission statements cannot be empty")
-		}
-
 		if permission.Grant != "rw" && permission.Grant != "ro" && permission.Grant != "none" {
 			return nil, fmt.Errorf("grant field in permission statements must be one of: rw, ro, none")
 		}
