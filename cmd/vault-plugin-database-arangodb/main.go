@@ -1,7 +1,7 @@
 package main
 
 import (
-	arangodb "github.com/ArborMetrix/vault-plugin-database-arangodb"
+	arangodb "github.com/eplightning/vault-plugin-database-arangodb"
 	"github.com/hashicorp/vault/sdk/database/dbplugin/v5"
 	"log"
 	"os"
